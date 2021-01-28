@@ -7,7 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.util.ArrayList;
 import java.util.Arrays;
-
+import java.lang.Thread;
 
 public class UserStory1 {
     public static void main(String[] args) throws InterruptedException {
@@ -21,12 +21,12 @@ public class UserStory1 {
         driver.get("http://login2.nextbasecrm.com");
         //we make sure we are under the right title
         //go to the page inspect it find the title to compare with actual title
-       //use command+F for finding title in inspection
-       // and coppy it this will be our expected title
-       String expectedTitle="Authorization";
-       //this one is for actual title
-      String actualTitle=driver.getTitle();
-      //it is time to compare them
+        //use command+F for finding title in inspection
+        // and coppy it this will be our expected title
+        String expectedTitle="Authorization";
+        //this one is for actual title
+        String actualTitle=driver.getTitle();
+        //it is time to compare them
         if(expectedTitle.equals(actualTitle)){
             System.out.println("Title verification is PASS!!");
             //to see the data simply print out in each possiblty
@@ -62,7 +62,7 @@ public class UserStory1 {
             //same proccess for passcode
             Thread.sleep(2000);
             //find password input box and enter the password
-          driver.findElement(By.xpath("//input[@name='USER_PASSWORD']")).sendKeys(passWord);
+            driver.findElement(By.xpath("//input[@name='USER_PASSWORD']")).sendKeys(passWord);
             Thread.sleep(2000);
             //find remember me checkbox and click to it
             driver.findElement(By.cssSelector("input[id='USER_REMEMBER']")).click();
