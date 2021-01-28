@@ -9,5 +9,7 @@ public class TestBranch {
         System.out.println("why there is a conflict?");
 
         System.out.println("sdfsdf");
+
+        System.out.println("pleasee noo conflicts anymoreeee");
     }
 }
