@@ -21,5 +21,5 @@ public class MainPagePOM extends Login {
     @FindBy(xpath = "//ul[@id='appmenu']/li[7]")
     WebElement buttonAnnouncement;
 
-
+//Find all the elements on the page
 }
