@@ -7,5 +7,7 @@ public class TestBranch {
         System.out.println("hello team!");
 
         System.out.println("why there is a conflict?");
+
+        System.out.println("sdfsdf");
     }
 }
