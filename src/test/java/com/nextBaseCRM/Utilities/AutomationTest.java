@@ -15,7 +15,7 @@ public class AutomationTest {
             return new ChromeDriver();
         } else if (browserName.equalsIgnoreCase("safari")) {
             return new SafariDriver();
-        } else if (browserName.equalsIgnoreCase("firefox")) {
+        } else if (browserName.equalsIgnoreCase("fire fox")) {
             return new FirefoxDriver();
         } else if (browserName.equalsIgnoreCase("edge")) {
             return new EdgeDriver();
